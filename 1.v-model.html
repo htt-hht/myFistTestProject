@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+    <div id="demo">
+        <input type="text" v-model="text"/>{{text}}
+        <input type="checkbox" v-model="bool"/>{{bool}}
+    </div>
+
+    <script>
+        new Vue({
+            el:"#demo",
+            data:{
+                text:"出没在被遗忘的抽屉",
+                bool:false
+            }
+        })
+    
+    </script>
+</body>
+</html>
