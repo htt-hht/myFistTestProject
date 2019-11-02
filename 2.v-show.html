@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+    <div id="demo">
+        <input type="checkbox" v-model="bool">点我展示或隐藏p标签
+        <p v-show="bool">我是有隐身功能的p标签</p>
+    </div>
+
+    <script>
+        new Vue({
+            el:"#demo",
+            data:{
+                bool:false
+            }
+        })
+    
+    </script>
+</body>
+</html>
